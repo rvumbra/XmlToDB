@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conecta {
-    private static String url = "jdbc:mysql://161.35.74.251:3306/VUELOS?allowLoadLocalInfile=true";
+    private static String url = "jdbc:mysql://161.35.74.251:3306/COCHES?createDatabaseIfNotExist=true";
     private static String driverName = "com.mysql.cj.jdbc.Driver";
     private static String username = "user_dam_add";
     private static String password = "*21user_dam_server12*";
