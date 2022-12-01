@@ -1,0 +1,5 @@
+Estudia el contenido de Coches.xml.
+Crea la base de datos COCHES con las tablas necesarias para recolectar
+toda su información.
+Ten en cuenta que esto se va a hacer varias veces.
+Hay que no duplicar la información.
