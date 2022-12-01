@@ -36,7 +36,26 @@ public class CochesSQL {
         }
     }
 
-    public static void insertIntoTable(Connection connection, List<Object> list, int params){
+    public static void insertIntoTable(Connection connection, List<Object> list, int params, String tableName){
+        String query = "insert into "+tableName+" values ";
 
+        for (Object o : list){
+            switch (tableName){
+                case "SUPPLIER"->{
+                    insertSupplier(connection, params, query, o);
+                    query += ", ";
+                }
+            }
+        }
+    }
+
+    /**
+     * Inserta un supplier en su respectiva tabla.
+     */
+    public static void insertSupplier(Connection connection, int params, String query, Object o){
+        query += "(";
+        for (int i = 1; i<params; i++)
+            query += "?,";
+        query += "?)";
     }
 }
